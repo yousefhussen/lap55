@@ -10,7 +10,7 @@ LazyTree::LazyTree(NodePointer node)
 {
     root = node;
 }
-//lazytree t1(New node(value));
+
 bool LazyTree::insert(ElementType dataVal)
 {
     
@@ -124,7 +124,7 @@ bool LazyTree::empty() const
 int LazyTree::size() const
 {
     
-   // cout << "deleted counter" << deletedCounter << endl;
+  
     return nodesCounter;
 }
 int LazyTree::deleted() const
@@ -170,14 +170,14 @@ bool LazyTree::member(ElementType const& obj) const
         return 0;
     }
 
-    //return false is the tree is empty
+   
     if (empty())
     {
         return false;
     }
     NodePointer node = root;
 
-    //iterate through the BST
+    
     while (node != NULL)
     {
         if (obj == node->data)
@@ -307,7 +307,7 @@ void LazyTree::breadth_first_traversal(NodePointer node, ElementType level) cons
         node = root;
     }
     if (empty()) { return; }
-    //print first node ya nigga
+    
     if (level == -1)
     {
         if (node->isErased)
@@ -366,7 +366,7 @@ void LazyTree::breadth_first_traversal(NodePointer node, ElementType level) cons
 }
 
 
-//btm3s7 kolo 
+
 void LazyTree::clear(NodePointer node)
 {
     if (node == nullptr)
@@ -394,7 +394,7 @@ void LazyTree::clear(NodePointer node)
 
 
 }
-//btm37 gz2 mno
+
 void LazyTree::clean(NodePointer node , NodePointer pre)
 {
    
